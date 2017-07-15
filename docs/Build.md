@@ -19,4 +19,4 @@ The executable along with the referenced files and the configuration file will b
 
 Back to [ReadMe][1]
 
-[1]: ../ReadMe.md
+[1]: ../README.md
