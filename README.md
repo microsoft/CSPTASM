@@ -35,4 +35,4 @@ Please refer to the [License][5]
 [2]: docs/Configure.md
 [3]: docs/UserGuide.md
 [4]: Contributing.md
-[5]: License.md
+[5]: License
