@@ -1,4 +1,4 @@
-# Introduction
+﻿# Introduction
 This document is step by step guide for creating a user with Admin Agent role assigned.
 
 # Prerequisites
@@ -8,11 +8,11 @@ This document is step by step guide for creating a user with Admin Agent role as
 
 2. On the **Dashboard** page, in the **User accounts** section, click on **Add new user**. 
     
-    ![](.\images\CreateUserOption.png)
+    ![](images/CreateUserOption.png)
 
 3. Enter a name and email for the new user. Select **Admin Agent** as the type of role access to be granted to the user. 
     
-    ![](.\images\CreateAdminAgentUser.png)
+    ![](images/CreateAdminAgentUser.png)
     
 4. Click on **Add** to create the user. On the confirmation page, note the username and temporary password of the new user created.
 

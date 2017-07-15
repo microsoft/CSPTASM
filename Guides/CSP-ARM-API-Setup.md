@@ -14,15 +14,15 @@ The following are the prerequisites:
 
 2. In the left-hand navigation pane, select **More services** and click **App registrations**.
     
-    ![](.\images\ARMAPIGuide-AppReg.png)
+    ![](images/ARMAPIGuide-AppReg.png)
 
 3. On the **App registrations blade**, click **Add**.
 
-    ![](.\images\ARMAPIGuide-AppRegAdd.png)
+    ![](images/ARMAPIGuide-AppRegAdd.png)
 
 4. On the **Create** blade, enter a **Name** for the application. In this example, *CSPARMNativeApp* is the name of the application. Select **Native** in **Application Type**. Provide a **Redirect URI**, e.g. *https://MyCSPARMNativeApp*
     
-    ![](.\images\ARMAPIGuide-CreateApp.png)
+    ![](images/ARMAPIGuide-CreateApp.png)
 
 5. When you are done, click **Create**.
 
@@ -34,29 +34,29 @@ The following are the prerequisites:
 
 3. On the **App registrations** blade, from the list, click on the application registered in the previous section.
 
-    ![](.\images\ARMAPIGuide-AppRegblade.png)
+    ![](images/ARMAPIGuide-AppRegblade.png)
 
 4. On the blade for the registered application, click **All settings**. On the **Settings** blade, click **Required permissions**.
     
-    ![](.\images\ARMAPIGuide-AppPerm.png)
+    ![](images/ARMAPIGuide-AppPerm.png)
 
 5. On the **Required permissions** blade, click **Add**. On the **Add API access** blade, click **Select an API**.
     
-    ![](.\images\ARMAPIGuide-AddAPI.png)
+    ![](images/ARMAPIGuide-AddAPI.png)
 
 6. On the **Select an API** blade, click **Windows Azure Service Management API**. Click **Select** to continue.
     
-    ![](.\images\ARMAPIGuide-SelectAzureAPI.png)
+    ![](images/ARMAPIGuide-SelectAzureAPI.png)
 
 7. On the **Enable Access** blade, check **Access Azure Service Management as organization users (preview)**. Click **Select** to continue.
     
-    ![](.\images\ARMAPIGuide-Checkbox.png)
+    ![](images/ARMAPIGuide-Checkbox.png)
 
 8. On the **Add API access** blade, click **Done**.
 
 9. On the blade for the registered application, below **Object ID**, Click on **Click to copy** to copy the Object ID associated with the registered application. Save this ID as it will be used in the steps in subsequent section of the document.
     
-    ![](.\images\ARMAPIGuide-CopyObjectID.png)
+    ![](images/ARMAPIGuide-CopyObjectID.png)
 
 # 5. Configure Pre-consent for the registered application
 
@@ -68,11 +68,11 @@ The following are the prerequisites:
     Connect-AzureAD 
     ```
     
-    ![](.\images\ARMAPIGuide-ConnectAADPS.png)
+    ![](images/ARMAPIGuide-ConnectAADPS.png)
 
 3. You will then be prompted for your credentials.
     
-    ![](.\images\ARMAPIGuide-AADLogin.png)
+    ![](images/ARMAPIGuide-AADLogin.png)
     
 4. Modify the PowerShell script given below by specifying the **Object ID** of the application registered earlier.
 
@@ -95,7 +95,7 @@ The following are the prerequisites:
 
 5. Execute the modified script to configure pre-consent for the application.
     
-    ![](.\images\ARMAPIGuide-PreconsentScript.png)
+    ![](images/ARMAPIGuide-PreconsentScript.png)
 
 # 6. Get the Application ID of the registered application
 
@@ -105,11 +105,11 @@ The following are the prerequisites:
 
 3. On the **App registrations** blade, from the list, click on the application registered earlier.
     
-    ![](.\images\ARMAPIGuide-AppRegblade.png)
+    ![](images/ARMAPIGuide-AppRegblade.png)
 
 4. On the blade for the registered application, below **Application ID**, Click on **Click to copy** to copy the application id associated with the registered application. This can be used in the custom applications to fetch the Azure AD token and perform ARM API operations.
     
-    ![](.\images\ARMAPIGuide-AppID.png)
+    ![](images/ARMAPIGuide-AppID.png)
 
 # 7. Conclusion
 

@@ -30,7 +30,7 @@ This document is step by step guide for the configuration process. The configura
     
     ![](images/PCConfigNativeAppID.jpg)
 
-8. In TASM Configuration window, provide the **Username** and **Password**. The user must have the Admin Agent role assigned in Partner Center. You can follow the steps for creating a user with Admin Agent role assigned. 
+8. In TASM Configuration window, provide the **Username** and **Password**. The user must have the Admin Agent role assigned in Partner Center. You can follow the [Steps for creating a user with Admin Agent role assigned][3]. 
     
     ![](images/PCConfigUserCreds.jpg)
 
@@ -72,4 +72,5 @@ This document is step by step guide for the configuration process. The configura
 
 [1]: https://partnercenter.microsoft.com
 [2]: CSP-ARM-API-Setup.md
+[3]: CreateAdminAgentUser.md
 
