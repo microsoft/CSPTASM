@@ -1,0 +1,107 @@
+﻿<Window x:Name="TASMOptions" x:Class="TASM.Options"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TASM"
+        mc:Ignorable="d"
+        Title="TASM Options" Height="500" Width="600" Loaded="TASMOptions_Loaded" >
+    <Grid>
+        <TabControl Margin="10,0,9.6,49.4" BorderThickness="0"  >
+            <TabItem Header="Input Specifications" >
+                <Grid >
+                    <GroupBox Margin="12,0,0,0" HorizontalAlignment="Left"  VerticalAlignment="Top" Header="VM Specifications" Height="378" Width="268">
+                        <Grid >
+                            <Label x:Name="lblVMSpecsSkipLines" Content="Skip lines (including header) : " HorizontalAlignment="Left" Margin="15,0,0,0" VerticalAlignment="Top" Width="169"/>
+                            <ComboBox x:Name="cboVMSpecsSkipLines" SelectedValuePath="Content" Margin="184,4,0,0" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="40" />
+                            <Label x:Name="lblInputVMSpecsSequence" Content="Sequence of columns : " HorizontalAlignment="Left" Margin="16,33,0,0" VerticalAlignment="Top" Width="168"/>
+                            <ListBox x:Name="lstInputVMSpecs" HorizontalAlignment="Left" Height="251" VerticalAlignment="Top" Width="223" Margin="19,60,0,0"/>
+                            <Button x:Name="btnVMSpecsMoveUp" Margin="38,323,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Move Up" Width="81" Click="btnVMSpecsMoveUp_Click" />
+                            <Button x:Name="btnVMSpecsMoveDown" Margin="134,323,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"  Content="Move Down" Width="81" Click="btnVMSpecsMoveDown_Click" />
+                        </Grid>
+                    </GroupBox>
+                    <GroupBox Margin="292,0,0,0" HorizontalAlignment="Left"  VerticalAlignment="Top" Header="Override VM Specifications" Height="378" Width="268">
+                        <Grid >
+                            <Label x:Name="lblOverrideSpecsSkipLines" Content="Skip lines (including header) : " HorizontalAlignment="Left" Margin="15,0,0,0" VerticalAlignment="Top" Width="169"/>
+                            <ComboBox x:Name="cboOverrideSpecsSkipLines" SelectedValuePath="Content" Margin="184,4,0,0" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="40" />
+                            <Label x:Name="lblInputOverrideSpecsSequence" Content="Sequence of columns : " HorizontalAlignment="Left" Margin="16,33,0,0" VerticalAlignment="Top" Width="168"/>
+                            <ListBox x:Name="lstInputOverrideSpecs" HorizontalAlignment="Left" Height="251" VerticalAlignment="Top" Width="223" Margin="19,60,0,0"/>
+                            <Button x:Name="btnOverrideMoveUp" Margin="38,323,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Move Up" Width="81" Click="btnOverrideMoveUp_Click" />
+                            <Button x:Name="btnOverrideMoveDown" Margin="134,323,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"  Content="Move Down" Width="81" Click="btnOverrideMoveDown_Click" />
+                        </Grid>
+                    </GroupBox>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Operating System">
+                <Grid >
+                    <GroupBox Margin="12,0,0,0" HorizontalAlignment="Left"  VerticalAlignment="Top" Header="Windows" Height="378" Width="268">
+                        <Grid >
+                            <Label x:Name="lblWindowsKeywords" Content="Windows Keywords : " HorizontalAlignment="Left" Margin="16,8,0,0" VerticalAlignment="Top" Width="168"/>
+                            <ListBox x:Name="lstWindowsKeywords" SelectedValuePath="Content" HorizontalAlignment="Left" Height="251" VerticalAlignment="Top" Width="223" Margin="19,35,0,0"/>
+                            <Button x:Name="btnWindowsRemove" Margin="83,293,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"  Content="Remove" Width="81" Click="btnWindowsRemove_Click" />
+                            <TextBox x:Name="txtAddtoWindows" Margin="19,323,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="136" />
+                            <Button x:Name="btnWindowsAdd" Margin="160,322,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Add" Width="81" Click="btnWindowsAdd_Click" />
+                        </Grid>
+                    </GroupBox>
+                    <GroupBox Margin="292,0,0,0" HorizontalAlignment="Left"  VerticalAlignment="Top" Header="Linux" Height="378" Width="268">
+                        <Grid >
+                            <Label x:Name="lblLinuxKeywords" Content="Linux Keywords : " HorizontalAlignment="Left" Margin="16,9,0,0" VerticalAlignment="Top" Width="168"/>
+                            <ListBox x:Name="lstLinuxKeywords" SelectedValuePath="Content" HorizontalAlignment="Left" Height="251" VerticalAlignment="Top" Width="223" Margin="19,36,0,0"/>
+                            <Button x:Name="btnLinuxRemove" Margin="83,293,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"  Content="Remove" Width="81" Click="btnLinuxRemove_Click" />
+                            <TextBox x:Name="txtAddtoLinux" Margin="19,323,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="136" />
+                            <Button x:Name="btnLinuxAdd" Margin="160,322,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Add" Width="81" Click="btnLinuxAdd_Click" />
+                        </Grid>
+                    </GroupBox>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Azure VM SKUs">
+                <GroupBox >
+                    <Grid >
+                        <Grid >
+                            <Label x:Name="lblIncludeSKUSeries" Content="Included SKU series : " HorizontalAlignment="Left" Margin="31,8,0,0" VerticalAlignment="Top" Width="168"/>
+                            <ListBox x:Name="lstIncludeSKUSeries" HorizontalAlignment="Left" Height="281" VerticalAlignment="Top" Width="223" Margin="34,35,0,0"/>
+                            <Button x:Name="btnSKUSeriesRemove" Margin="98,330,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"  Content="Remove" Width="81" Click="btnSKUSeriesRemove_Click" />
+                        </Grid>
+                        <Grid >
+                            <Label x:Name="lblExcludeSKUSeries" Content="Excluded SKU series : " HorizontalAlignment="Left" Margin="303,8,0,0" VerticalAlignment="Top" Width="168"/>
+                            <ListBox x:Name="lstExcludeSKUSeries" HorizontalAlignment="Left" Height="281" VerticalAlignment="Top" Width="223" Margin="306,35,0,0"/>
+                            <Button x:Name="btnSKUSeriesAdd" Margin="370,330,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"  Content="Add" Width="81" Click="btnSKUSeriesAdd_Click" />
+                        </Grid>
+                    </Grid>
+                </GroupBox>
+            </TabItem>
+            <TabItem Header="Advanced">
+                <GroupBox >
+                    <Grid>
+                        <Label x:Name="lblMappingCoefficients"  HorizontalAlignment="Left" VerticalAlignment="Top" Content="Mapping Coefficients" />
+                        <Rectangle Fill="LightGray" HorizontalAlignment="Left" VerticalAlignment="Top" Width="415" Height="1" Margin="125,13,0,0"/>
+                        <Label x:Name="lblMappingCoeffCores" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Cores :" Margin="14,27,0,0" />
+                        <ComboBox x:Name="cboMappingCoefCores" SelectedValuePath="Content" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="129,30,0,0" Width="50" />
+                        <Label x:Name="lblMappingCoeffMemory" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Memory :" Margin="232,27,0,0" />
+                        <ComboBox x:Name="cboMappingCoefMemory" SelectedValuePath="Content" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="347,30,0,0" Width="50" />
+                        <Label x:Name="lblStorageMapping"  HorizontalAlignment="Left" VerticalAlignment="Top" Content="Storage Mapping (Managed Disks)" Margin="0,99,0,0" />
+                        <Rectangle Fill="LightGray" HorizontalAlignment="Left" VerticalAlignment="Top" Width="345" Height="1" Margin="197,112,0,0"/>
+                        <Label x:Name="lblDefaultOSDiskHDDSize" Content="OS Disk Size (HDD) : " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="15,133,0,0"  />
+                        <ComboBox x:Name="cboOSDiskHDDSize" SelectedValuePath="Content" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="129,136,0,0" Width="50" />
+                        <Label x:Name="lblDefaultOSDiskSSDSize" Content="OS Disk Size (SSD) : " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="232,133,0,0"  />
+                        <ComboBox x:Name="cboOSDiskSSDSize" SelectedValuePath="Content" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="347,136,0,0" Width="50" />
+                        <Label x:Name="lblOthers" Content="Other settings" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2,187,0,0"  />
+                        <Rectangle Fill="LightGray" HorizontalAlignment="Left" VerticalAlignment="Top" Width="450" Height="1" Margin="92,200,-56.6,0"/>
+                        <Label x:Name="lblMemoryGBMB" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Memory (GB/MB) :" Margin="14,226,0,0" />
+                        <ComboBox x:Name="cboMemoryGBMB" SelectedValuePath="Content" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="129,229,0,0" Width="50" />
+                        <Label x:Name="lblHoursinaMonth" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Hours in a month :" Margin="230,226,0,0" />
+                        <ComboBox x:Name="cboHoursinaMonth" SelectedValuePath="Content" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="347,229,0,0" Width="50" />
+                        <Label x:Name="lblBias" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Bias :" Margin="14,294,0,0" />
+                        <ComboBox x:Name="cboBias" SelectedValuePath="Content" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="129,297,0,0" Width="50" SelectedIndex="0" >
+                            <ComboBoxItem Content="Cost"/>
+                            <ComboBoxItem Content="Performance" IsEnabled="False"/>
+                        </ComboBox>
+                    </Grid>
+                </GroupBox>
+            </TabItem>
+        </TabControl>
+        <Button x:Name="btnDefault" Content="Reset to Defaults" HorizontalAlignment="Left"  VerticalAlignment="Top"  Margin="29,426,0,0" Width="100" Click="btnDefault_Click" />
+        <Button x:Name="btnOK" Margin="390,426,0,0" HorizontalAlignment="Left"  VerticalAlignment="Top" Content="OK" Width="70" Click="btnOK_Click" />
+        <Button x:Name="btnCancel" Margin="486,426,0,0" HorizontalAlignment="Left"  VerticalAlignment="Top" Content="Cancel" Width="70" Click="btnCancel_Click" />
+    </Grid>
+</Window>
