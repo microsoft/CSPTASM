@@ -34,5 +34,5 @@ Please refer to the [License][5]
 [1]: .\Guides\Build.md
 [2]: .\Guides\Configure.md
 [3]: .\Guides\UserGuide.md
-[4]: .\Contributing.md
+[4]: Contributing.md
 [5]: .\License.md
