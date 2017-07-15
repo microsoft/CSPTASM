@@ -70,7 +70,10 @@ This document is step by step guide for the configuration process. The configura
 
 18.  Click on **OK** to save the configuration. 
 
+Back to [ReadMe][4]
+
 [1]: https://partnercenter.microsoft.com
 [2]: CSP-ARM-API-Setup.md
 [3]: CreateAdminAgentUser.md
+[4]: ../README.md
 
