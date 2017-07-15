@@ -115,4 +115,7 @@ The following are the prerequisites:
 
 The application created using the steps in this document has been configured for pre-consent and can be used for accessing ARM APIs of the CSP Azure subscriptions.
 
+Back to [Step by step guide for configuration][2]
+
 [1]: https://portal.azure.com
+[2]: Configure.md

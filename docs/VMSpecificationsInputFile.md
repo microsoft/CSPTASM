@@ -21,6 +21,9 @@ PricePerMonth - Current pricing for the instance without any unit specifications
 
 **Additional notes**: The OS Disk size should *not* be included in the **SSDStorageInGB** and/or **HDDStorageInGB**. Also, the OS Disk should *not* be included in the **SSDNumOfDisks** and/or **HDDNumOfDisks**. The fields: **SSDStorageInGB**, **HDDStorageInGB**, **SSDNumOfDisks** and **HDDNumOfDisks** should include information of data disks only. The OS Disk for each instance is mapped to a managed disk by default and added in the output. The managed disk size that will be mapped for the OS disk can be changed in the options of the tool.
 
+Back to [User guide][1]
+
+[1]: UserGuide.md
 
 
 

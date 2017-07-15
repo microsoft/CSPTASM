@@ -22,3 +22,6 @@ The following are the additional columns that are added in the output:
 * **Standard Disks** - Standard Managed Disks mapped by the tool. This will be blank if no standard managed disks were mapped. E.g. *2 x S30; 1 x S4*
 * **Compute Hours Rate** - The rate per hour for the compute hours component for the mapped Azure VM SKU. The units (e.g. *USD*) will be added to the header. E.g. *0.45*
 
+Back to [User guide][1]
+
+[1]: UserGuide.md
