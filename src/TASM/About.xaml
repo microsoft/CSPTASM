@@ -1,0 +1,14 @@
+﻿<Window x:Name="About1" x:Class="TASM.About"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TASM"
+        mc:Ignorable="d"
+        Title="About" Height="250" Width="600" Loaded="About1_Loaded" Background="GhostWhite" ResizeMode="NoResize">
+    <Grid>
+        <Label x:Name="lblTASM" Foreground="SteelBlue" HorizontalAlignment="Left" Margin="27,28,0,0" VerticalAlignment="Top" Width="557" Height="65" FontSize="36"/>
+        <TextBlock x:Name="txtbMessage" Margin="10,120,0,0" HorizontalAlignment="Left"  VerticalAlignment="Top" TextWrapping="WrapWithOverflow" FontStyle="Italic" />
+
+    </Grid>
+</Window>
