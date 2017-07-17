@@ -1,6 +1,6 @@
 
 #  1. Introduction
-TASM enables CSP Partners to rapidly estimate the costs for hosting VMs in Azure through the automated mapping of virtual machine specifications to equivalent Azure VMs. After mapping source VMs to Azure VMs based on their specification, TASM also retrieves real-time CSP pricing for each VM.
+TASM enables Microsoft Cloud Solution Provider (CSP) Partners to rapidly estimate the cost of hosting VMs in Azure through the automated mapping of virtual machine specifications to equivalent Azure VMs. After mapping source VMs to Azure VMs based on their specification, TASM also retrieves current CSP pricing for each VM.
 
 # 2. Background
 Many CSP Partners are seeking to provide services to migrate existing IaaS workloads to Azure. Partners focussing on migration frequently need to estimate the costs of hosting existing VMs on Azure. This tool enables CSP Partners to rapidly estimate the costs for hosting VMs in Azure.
@@ -14,15 +14,15 @@ Many CSP Partners are seeking to provide services to migrate existing IaaS workl
 You can refer to the [Build guide][1] for generating the executable from the source code.
 
 # 5. Configuration
-This tool requires a one-time configuration to be done before it can be used. Follow the [Step by step guide for configuration][2].
+This tool requires some initial configuration prior to first use. Follow the [Step by step guide for configuration][2].
 
 # 6. User guide
-Please refer to the [User guide][3] to know more on how to use the tool.
+Please refer to the [User guide][3] for more information on how to use the tool.
 
 # 7. Limitations
 * This tool and the source code is provided as a sample and no support is provided. 
-* The cost of software/workload running in the VMs is not estimated.
-* The operating system of VMs can be mapped to Windows or Linux only. Other operating systems options (e.g. Red Hat Enterprise Linux) is not estimated by the tool.
+* The cost of software/workloads running in the VMs is not estimated.
+* The operating system for VMs can be mapped to Windows or Linux only. Costs for other operating systems options (e.g. Red Hat Enterprise Linux) are not estimated by the tool.
 * Network related costs are also not included and not estimated.
 
 # 8. Contributions
